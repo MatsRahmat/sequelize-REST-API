@@ -11,7 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Contry.hasMany(models.ContryLanguage, { foreignKey: 'contriId'})
+      Contry.hasMany(models.ContryLanguage, { foreignKey: 'contryId'})
+      Contry.belongsTo(models.User, { foreignKey: 'UserId'})
     }
   }
   Contry.init({

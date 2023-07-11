@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Language.hasMany(models.ContryLanguage, { foreignKey: 'languageId'})
-
+      
     }
   }
   Language.init({
