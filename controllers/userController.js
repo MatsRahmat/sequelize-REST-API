@@ -1,5 +1,5 @@
 const { User } = require('../models')
-const { hasingPassword, comparePassword, generateToken, decodeToken } = require('../helpers/helper')
+const { comparePassword, generateToken } = require('../helpers/helper')
 
 class UserController {
 

@@ -16,6 +16,6 @@ router.use(authentication)
 
 router.get('/contry', LanguageController.readContry)
 router.post('/contry', LanguageController.addContry)
-router.get('/contrydetails', LanguageController.contryDetails)
+router.get('/contry/:id', LanguageController.contryDetails)
 
 module.exports = router
